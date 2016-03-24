@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!-
+YAPTB SDP Record for Bluetooth Keyboard Emulation
+Adapted from 
+www.linuxuser.co.uk/tutorials/emulate-a-bluetooth-keyboard-with-the-raspberry-pi
+-->
 <record>
 	<attribute id="0x0001">
 		<sequence>
