@@ -19,9 +19,9 @@ class BtkGpioClient():
         #constants
         PIN=37                          # physical number of GPIO pin to monitor  
         KEYCODE=26                      # w scan code - key code to send. 
-        MIN_KEY_TIME=0.0001             # minimum delay between key down and key up events to enable key press to be detected
+        MIN_KEY_TIME=0.001              # minimum delay between key down and key up events to enable key press to be detected
         REPEAT_KEY=True                 # True = repeat key while the pin is enabled. FALSE = send a single key per keypress
-        REPEAT_KEY_DELAY=0.02           # delay between repeated key presses when REPEAT_KEY = True
+        REPEAT_KEY_DELAY=0.001          # delay between repeated key presses when REPEAT_KEY = True
 
 
         def __init__(self):
