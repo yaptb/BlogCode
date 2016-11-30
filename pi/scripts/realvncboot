@@ -1,0 +1,23 @@
+#! /bin/sh
+#! /etc/init.d/vncboot
+#
+
+cd ~pi
+
+case "$1" in
+	start)
+		echo "Starting VNC server"
+		su pi -c '/usr/bin/vncserver -geometry 1776x1000'
+	;;
+	stop)
+		echo "Stopping VNC Server"
+		pkill vncserver
+	;;
+	*)
+	echo "Usage: /etc/init.d/vncboot (start|stop)"
+	exit 1
+	;;
+esac
+
+exit 0
+
