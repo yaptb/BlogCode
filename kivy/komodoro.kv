@@ -1,0 +1,56 @@
+#:kivy 1.09
+
+# kivy language definition for the Komodoro application
+# http://yetanotherpointlesstechblog.blogspot.com
+
+#define the root window widget
+<KomodoroMain>:
+
+	
+	#enable selected widgets to be bound to object properties
+	# pythonPropertyName:widget_id
+
+	displayLabel:display_label
+	startButton:start_button
+	stopButton:stop_button
+
+
+	#application title
+	Label:
+		text:"Komodoro"
+		center_x:root.width/2
+		top:root.top
+
+	#main time display
+	Label:
+		id:display_label
+		text:"15:00"
+		font_size:100
+		center_x:root.width/2
+		center_y:root.height/2
+	
+	#button bar
+	BoxLayout:
+		
+		height:40
+		width:root.width/4
+		center_x:root.width/2
+		spacing:20
+
+		Button:
+			id:start_button
+			on_press:root.btnStart_OnPress(*args)
+			text:"Start"
+		
+		Button:
+			id:stop_button
+			on_press:root.btnStop_OnPress(*args)
+			disabled:True
+			text:"Stop"
+
+		Button:
+			id:resetButton
+			on_press:root.btnReset_OnPress(*args)
+			text:"Reset"
+
+
