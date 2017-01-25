@@ -74,7 +74,7 @@ class BTKbBluezProfile(dbus.service.Object):
 class BTKbDevice():
     #change these constants 
     MY_ADDRESS="00:1A:7D:DA:71:13"
-    MY_DEV_NAME="Raspberry_Pitooth_BTKb"
+    MY_DEV_NAME="DeskPi_BTKb"
 
     #define some constants
     P_CTRL =17  #Service port - must match port configured in SDP record
